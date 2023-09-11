@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+  <head>
+  <title>CSS TASK-02</title>
+  <style>
+    .vertical {
+      padding: 5px;
+      width: 200px;
+      height: 40px;
+      background-color: skyblue;
+      color: blue;
+      font-size: 20px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .vertical:hover {
+      background-color: rgb(217, 172, 58);
+      color: white;
+    }
+
+    .container {
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      width: 500px;
+      background-color: lightgray;
+    }
+
+    .horizontal {
+      display: inline-block;
+      width: 100px;
+      height: 50px;
+      border-right: 2px solid blue;
+      display: flex;
+      justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically */
+      text-align: center;
+      color: blue;
+      transition: background-color 0.3s;
+      cursor: pointer;
+    }
+
+    .horizontal:hover {
+      background-color: gray;
+      color: white;
+    }
+    
+  </style>
+</head>
+  <body>
+    <div style="border: 1px solid black; width:220px">
+      <div class="vertical" id="home">Home</div>
+      <div class="vertical" id="java">Java</div>
+      <div class="vertical" id="css">CSS</div>
+      <div class="vertical" id="html">HTML</div>
+      <div class="vertical" id="bs">Bootstrap</div>
+    </div>
+    <br /><br /><br />
+    <div class="container">
+      <div class="horizontal">Home</div>
+      <div class="horizontal">Java</div>
+      <div class="horizontal">CSS</div>
+      <div class="horizontal">HTML</div>
+      <div class="horizontal">Bootstrap</div>
+    </div>
+  </body>
+</html>
